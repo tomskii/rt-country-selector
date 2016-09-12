@@ -25,20 +25,28 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="jquery-ui.css"/>
 	<script>
+
+	</script>
+	<script>
 		(function($){
 			$(function(){
-				$('select').selectToAutocomplete();
-				$('#submit').on('click', function() {
+				$('#country-selector').val('');
+
+				$("form").submit(function( event ) {
 					var selectValue = $('#country-selector').val();
 					if (_.includes(['Hong Kong', 'Japan', 'Malaysia', 'Singapore',
 								'Korea, Republic of', 'Taiwan', 'Brunei Darussalam', 'Israel', 'Canada', 'United States', 'Argentina',
 								'Belize', 'Brazil', 'Chile', 'El Salvador', 'Guatemala', 'Honduras', 'Mexico',
 								'Nicaragua', 'Panama', 'Paraguay', 'Uruguay', 'Australia', 'New Zealand'], selectValue)){
 						window.location.href = 'finish.html';
+						event.preventDefault();
 					} else {
 						window.location.href = 'ineligible.html';
+						event.preventDefault();
 					}
 				});
+
+				$('select').selectToAutocomplete();
 			});
 		})(jQuery);
 	</script>
@@ -83,7 +91,7 @@
 
 <br> <br>
 
-<form>
+<form name="countries" id="countries">
 		<div class="form-group">
 			<fieldset class="inline" id="passportNationality">
 				<label class="form-label-bold label" for="passportNationality" data-label="Nationality">What country or territory is your passport from?</label>
@@ -342,11 +350,11 @@
 			</fieldset>
 		</div>
 
-</form>
-
 	<div class="form-group">
 		<button class="button" type="submit" id="submit">Continue</button>
 	</div>
+</form>
+
 
 <!-- STOP DELETING! -->
 
