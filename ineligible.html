@@ -1,0 +1,79 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Registered Traveller</title>
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+	<script type="text/javascript" src="scripts/jquery.select-to-autocomplete.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css"/>
+	<script>
+		(function($){
+			$(function(){
+				$('select').selectToAutocomplete();
+				$('form').submit(function(){
+					alert( $(this).serialize() );
+					return false;
+				});
+			});
+		})(jQuery);
+	</script>
+	<style>
+	h2 {font-size: 24px; line-height: 1.25; font-weight: 700; margin-bottom: 20px}
+	h3 {font-weight: 700; margin-bottom: -5px}
+	</style>
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+
+<div id="contentWrapper">
+	<main id="content">
+
+<!-- DELETE FROM HERE -->
+
+
+<h1 class="heading-large">You can’t apply for Registered Traveller</h1>
+<p>You can only apply if you have an eligible passport.</p>
+<h2>Eligible passports</h2>
+<h3>Asia</h3>
+<p>Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea, Taiwan (you must have a personal ID number on the photo page) </p>
+
+<h3>Middle East</h3>
+<p>Brunei, Israel</p>
+
+<h3>North America</h3>
+<p>Canada, USA </p>
+
+<h3>South America</h3>
+<p>Argentina, Belize, Brazil, Chile, El Salvador, Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Uruguay</p>
+
+<h3>Rest of the world</h3>
+<p>Australia, New Zealand</p>
+
+<p>You can still <a href="https://www.gov.uk/browse/visas-immigration">enter the UK in the normal way</a>.</p>
+
+<!-- STOP DELETING! -->
+
+	</main>
+</div>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>
